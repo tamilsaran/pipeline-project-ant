@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <project name="Rectangle-Build" default="main" basedir=".">
-  <property environment="env"/>
+  <property environment="env" />
 
   <!-- Sets variables which can later be used. -->
   <!-- The value of a property is accessed via ${} -->
@@ -9,6 +9,7 @@
   <property name="dist.dir" location="dist" />
 
   <path id="class.path">
+    <pathelement location="./lib/junit-4.10.jar" />
     <pathelement location="./bin" />
    </path>
 

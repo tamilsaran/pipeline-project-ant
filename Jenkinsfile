@@ -10,7 +10,7 @@ pipeline  {
 	stage('test') {
 	steps {
 	sh 'ant -f test.xml -v'
-	junit -reports/*.xml
+	junit 'reports/result.xml'
 	}
 	}
     }

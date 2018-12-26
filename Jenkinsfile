@@ -1,4 +1,4 @@
-ipipeline {
+pipeline {
   agent any
 stages {
 stage('build') {
@@ -14,7 +14,7 @@ junit 'reports/result.xml'
 }
 stage('deployement'){
 steps {
-sh 'cp dist/rectangle_${env.BUILD_NUMBER}.jar /var/www/html/rectangles/all/'
+sh "cp dist/rectangle_${env.BUILD_NUMBER}.jar /var/www/html/rectangles/all/"
 }
 }
 }

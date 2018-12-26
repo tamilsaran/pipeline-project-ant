@@ -21,7 +21,6 @@ stages('running on centos'){
 steps {
 sh "wget http://localhost/rectangles/all/rectangle_${env.BUILD_NUMBER}.jar"
 sh "java -jar rectangle_${env.BUILD_NUMBER}.jar 3 4"
-
 }
 }
 }
